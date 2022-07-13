@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/site.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<script src="app.js"></script>
+<body>
+  <div class="header">
+    <div class="header_logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="header_menu">
+      <ul>
+        <li>Feature
+          <i class="fa-solid fa-angle-down"></i>
+          <ul class="element_menu_1">
+            <li><img src="images/icon-todo.svg" alt=""><p>Todo List</p></li>
+            <li><img src="images/icon-calendar.svg" alt=""><p>Calendar</p></li>
+            <li><img src="images/icon-reminders.svg" alt=""><p>Reminders</p></li>
+            <li><img src="images/icon-planning.svg" alt=""><p>Planning</p></li>
+          </ul>
+        </li>
+        <li>Company
+          <i class="fa-solid fa-angle-down"></i>
+          <ul class="element_menu_2">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="header_funcion">
+      <button class="login-but"><p>Login</p></button>
+      <div class="login hide">
+        <form class="form ">
+          <h1>LOGIN</h1>
+          <input class="input" placeholder="Email Address" type="email" required="">
+          <label class="error">Please provide a valid email</label>
+          <input class="Password" placeholder="Password" type="text">
+          <label class="error">Please provide a valid email</label>
+          <input class="submit" type="submit">
+          <button class="close">Cancel</button>
+        </form>
+        <!-- <form action="">
+          <input type="text" placeholder="Email address" type="email" >
+          <label class="error">Please provide a valid email</label>
+          <input type="text" placeholder="Password" type="hidden">
+          <input class="submit" type="submit">
+        </form> -->
+      </div>
+      <button class="register-but"><p>Register</p></button>
+      <div class="register">
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left_container">
+      <div class="content_top">
+        <h1>
+          <span>Make</span>
+          <span>remote work</span>
+        </h1>
+      </div>
+      <div class="content_mid">
+        <p>
+          Get your team in sync, no matter your location. 
+          Streamline processes, create team rituals, and watch productivity soar.</p>
+      </div>
+      <div class="learn_more">
+        <a href=""><p>Learn more</p></a>
+      </div>
+      <div class="logo">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="right_container">
+      <img src="images/image-hero-desktop.png" alt="">
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dinh Nhat Nguyen</a>.
+  </div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
