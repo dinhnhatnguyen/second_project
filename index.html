@@ -20,53 +20,36 @@
     <div class="header_logo">
       <img src="images/logo.svg" alt="">
     </div>
-    <div class="header_menu">
-      <ul>
-        <li>Feature
-          <i class="fa-solid fa-angle-down"></i>
-          <ul class="element_menu_1">
-            <li><img src="images/icon-todo.svg" alt=""><p>Todo List</p></li>
-            <li><img src="images/icon-calendar.svg" alt=""><p>Calendar</p></li>
-            <li><img src="images/icon-reminders.svg" alt=""><p>Reminders</p></li>
-            <li><img src="images/icon-planning.svg" alt=""><p>Planning</p></li>
-          </ul>
-        </li>
-        <li>Company
-          <i class="fa-solid fa-angle-down"></i>
-          <ul class="element_menu_2">
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
-          </ul>
-        </li>
-        <li>Careers</li>
-        <li>About</li>
-      </ul>
-    </div>
-    <div class="header_funcion">
-      <button class="login-but"><p>Login</p></button>
-      <div class="login hide">
-        <form class="form ">
-          <h1>LOGIN</h1>
-          <input class="input" placeholder="Email Address" type="email" required="">
-          <label class="error">Please provide a valid email</label>
-          <input class="Password" placeholder="Password" type="text">
-          <label class="error">Please provide a valid email</label>
-          <input class="submit" type="submit">
-          <button class="close">Cancel</button>
-        </form>
-        <!-- <form action="">
-          <input type="text" placeholder="Email address" type="email" >
-          <label class="error">Please provide a valid email</label>
-          <input type="text" placeholder="Password" type="hidden">
-          <input class="submit" type="submit">
-        </form> -->
+    <div class="header_container">
+      <div class="header_menu">
+        <ul>
+          <li>Feature
+            <i class="fa-solid fa-angle-down"></i>
+            <ul class="element_menu_1">
+              <li><img src="images/icon-todo.svg" alt=""><p>Todo List</p></li>
+              <li><img src="images/icon-calendar.svg" alt=""><p>Calendar</p></li>
+              <li><img src="images/icon-reminders.svg" alt=""><p>Reminders</p></li>
+              <li><img src="images/icon-planning.svg" alt=""><p>Planning</p></li>
+            </ul>
+          </li>
+          <li>Company
+            <i class="fa-solid fa-angle-down"></i>
+            <ul class="element_menu_2">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
       </div>
-      <button class="register-but"><p>Register</p></button>
-      <div class="register">
-
+      <div class="header_funcion">
+        <button id="login-but"><p>Login</p></button>
+        <button class="register-but"><p>Register</p></button>
       </div>
     </div>
+    
   </div>
   <div class="container">
     <div class="left_container">
@@ -100,18 +83,54 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Dinh Nhat Nguyen</a>.
   </div>
-
+  <div class="login" id="hide">
+    <form class="form ">
+      <h1>LOGIN</h1>
+      <input class="input" placeholder="Email Address" type="email" required="">
+      <input class="Password" placeholder="Password" type="text">
+      <label class="error">Please provide a valid email</label>
+      <input class="submit" type="submit">
+      <button id="close">Cancel</button>
+    </form>
+    <!-- <form action="">
+      <input type="text" placeholder="Email address" type="email" >
+      <label class="error">Please provide a valid email</label>
+      <input type="text" placeholder="Password" type="hidden">
+      <input class="submit" type="submit">
+    </form> -->
+  </div>
+  <div class="register">
+    <div class="login" id="hide">
+      <form class="form ">
+        <h1>LOGIN</h1>
+        <input class="input" placeholder="Email Address" type="email" required="">
+        <input class="Password" placeholder="Password" type="text">
+        <label class="error">Please provide a valid email</label>
+        <input class="submit" type="submit">
+        <button id="close">Cancel</button>
+      </form>
+      <!-- <form action="">
+        <input type="text" placeholder="Email address" type="email" >
+        <label class="error">Please provide a valid email</label>
+        <input type="text" placeholder="Password" type="hidden">
+        <input class="submit" type="submit">
+      </form> -->
+    </div>
+  </div>
   <script>
-    var form_list = document.querySelector('.login');
-    document.getElementsByClassName("login-but").onclick = toggleform;
-    function toggleform()
-    {
-      form_list.classList.toggle('hide');
+    
+    document.getElementById("login-but").onclick = show
+    document.getElementById("close").onclick = hidden
+
+    function show () {
+      document.getElementById("hide").style.display = 'block'
+    }
+    function hidden() {
+      document.getElementById("hide").style.display = 'none'
     }
   </script>
 </body>
 </html> 
-
 
 
 
