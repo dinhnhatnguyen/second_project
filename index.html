@@ -46,7 +46,7 @@
       </div>
       <div class="header_funcion">
         <button id="login-but"><p>Login</p></button>
-        <button class="register-but"><p>Register</p></button>
+        <button id="register-but"><p>Register</p></button>
       </div>
     </div>
     
@@ -99,15 +99,16 @@
       <input class="submit" type="submit">
     </form> -->
   </div>
-  <div class="register">
-    <div class="login" id="hide">
-      <form class="form ">
-        <h1>LOGIN</h1>
+  <div class="register" id="hide-1">
+      <form class="form-2">
+        <h1>REGISTER</h1>
         <input class="input" placeholder="Email Address" type="email" required="">
+        <input class="user_name" placeholder="User Name" type="text">
         <input class="Password" placeholder="Password" type="text">
+        <input class="Confirm_Password" placeholder="Confirm password" type="text">
         <label class="error">Please provide a valid email</label>
         <input class="submit" type="submit">
-        <button id="close">Cancel</button>
+        <button id="close-2">Cancel</button>
       </form>
       <!-- <form action="">
         <input type="text" placeholder="Email address" type="email" >
@@ -115,22 +116,37 @@
         <input type="text" placeholder="Password" type="hidden">
         <input class="submit" type="submit">
       </form> -->
-    </div>
   </div>
   <script>
     
-    document.getElementById("login-but").onclick = show
-    document.getElementById("close").onclick = hidden
-
-    function show () {
+    document.getElementById("login-but").onclick = function() {
       document.getElementById("hide").style.display = 'block'
     }
-    function hidden() {
+    document.getElementById("close").onclick =  function () {
       document.getElementById("hide").style.display = 'none'
     }
+    document.getElementById("register-but").onclick = function() {
+      document.getElementById("hide-1").style.display = 'block'
+    }
+    document.getElementById("close-2").onclick = function() {
+      document.getElementById("hide-1").style.display = 'none'
+    }
+   
   </script>
 </body>
 </html> 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
